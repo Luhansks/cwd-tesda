@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <div class="row">
+        <div class="col s12">This div is 12-columns wide on all screen sizes</div>
+        <div class="col s6">6-columns (one-half)</div>
+        <div class="col s6">6-columns (one-half)</div>
+      </div>
+    
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <title> GGS</title>
+        <body>   
+  <div class="slider">
+    <ul class="slides"> 
+      <li>
+        <img src="shanks.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="sharingan.jpeg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Hasda
+      </li>
+      <li>
+        <img src="grr.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="sharingan.jpeg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.6.1.min.js">
+                integrity ="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+ldQm1LuPXQ="
+                crossorigin="anonymous"></script>
+        </script>
+        <script> document.addEventListener('DOMContentLoaded', function() {
+            var instances = M.Materialbox.init(elems, options);
+          });
+        
+          $(document).ready(function(){
+            $('.materialboxed').materialbox();
+            var instance = M.Materialbox.getInstance(elem);
+          });
+        </script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+        </script>
+    </body>
